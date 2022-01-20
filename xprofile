@@ -1,0 +1,4 @@
+# Keyboard Settings
+
+setxkbmap us -variant euro -option 'caps:ctrl_modifier,compose:rctrl'
+xcape -e "Caps_Lock=Escape"

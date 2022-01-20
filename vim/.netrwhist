@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/flo/.ssh'
+let g:netrw_dirhist_2='/etc'
+let g:netrw_dirhist_3='/home/flo/ownCloud/Developer/div_registrierkasse/metler_utils'
+let g:netrw_dirhist_4='/home/flo/ownCloud/Developer/div_registrierkasse/mettlerutils'
+let g:netrw_dirhist_5='/home/flo/ownCloud/Developer/div_registrierkasse/mettlerutils/mettlerutils'
+let g:netrw_dirhist_6='/home/flo/ownCloud/Developer/div_registrierkasse/mettlerutils/mettlerutils/model'
+let g:netrw_dirhist_7='/etc/modules-load.d'
+let g:netrw_dirhist_8='/etc'
+let g:netrw_dirhist_9='/'

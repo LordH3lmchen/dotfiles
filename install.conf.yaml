@@ -1,0 +1,39 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.tmux.conf: tmux.conf
+    ~/.vim: vim
+    ~/.gitconfig: gitconfig
+    ~/.zsh: zsh
+    ~/.zshrc: zshrc
+    ~/:
+      glob: true
+      path: bash/.bash*
+    ~/.conkyrc: conky/conkyrc
+    ~/.fonts:
+      glob: true
+      create: true
+      path: fonts/*
+    ~/.config:
+      glob: true
+      path: config/*
+      relink: true
+      force: true
+      exclude: [ config/Code ]
+    ~/.i3: i3
+    ~/.xprofile: xprofile
+
+
+
+
+
+- create:
+    - ~/downloads
+    - ~/.vim/undo-history
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
