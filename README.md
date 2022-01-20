@@ -1,8 +1,9 @@
-Use **stow** to create symlinks
+# My dotfiles
 
-http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
+It is using [anishathalye/dotbot]('https://github.com/anishathalye/dotbot') to setup the dotfiles
 
-```
-$ stow zsh
-```
+```git clone git@github.com:LordH3lmchen/dotfiles.git ```
 
+and run
+
+``` ./install ```
