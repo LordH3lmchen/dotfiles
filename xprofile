@@ -1,4 +1,7 @@
 # Keyboard Settings
-
-setxkbmap us -variant euro -option 'caps:ctrl_modifier,compose:rctrl'
-xcape -e "Caps_Lock=Escape"
+if [[ -e /usr/bin/setxkbmap ]]; then
+  setxkbmap us -variant euro -option 'caps:ctrl_modifier,compose:rctrl'
+fi
+if [[ -e /usr/bin/xcape ]]; then
+  xcape -e "Caps_Lock=Escape"
+fi

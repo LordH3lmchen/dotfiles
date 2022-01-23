@@ -61,7 +61,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git archlinux tmux gitignore github sudo pass pipenv
+  git archlinux tmux gitignore github sudo pass pipenv docker
 )
 
 # User configuration
