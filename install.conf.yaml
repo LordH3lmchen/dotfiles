@@ -20,6 +20,7 @@
       path: fonts/*
     ~/.config:
       glob: true
+      create: true
       path: config/*
       relink: true
       force: true
