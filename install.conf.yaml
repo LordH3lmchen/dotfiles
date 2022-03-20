@@ -27,6 +27,7 @@
       exclude: [ config/Code ]
     ~/.i3: i3
     ~/.xprofile: xprofile
+    ~/.profile: profile
 
 
 
