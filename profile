@@ -1,1 +1,1 @@
-export GPODDER_HOME="~/Archiv/Podcasts"
+export GPODDER_HOME="$HOME/Archiv/Podcasts"
