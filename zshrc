@@ -189,5 +189,5 @@ if [[ -e $HOME/.cargo/bin/starship ]]; then
   eval "$(starship init zsh)"
 fi
 
-chia-start-all-if-needed
+# chia-start-all-if-needed
 
