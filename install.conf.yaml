@@ -14,6 +14,7 @@
       glob: true
       path: bash/.bash*
     ~/.conkyrc: conky/conkyrc
+    ~/.local/share/applications/conky.desktop: conky/conky.desktop
     ~/.fonts:
       glob: true
       create: true
