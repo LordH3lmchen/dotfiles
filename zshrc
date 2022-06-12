@@ -184,10 +184,11 @@ if [[ -d $HOME/.local/opt/flutter/bin ]]; then
   export PATH=$HOME/.local/opt/flutter/bin:$PATH
 fi
 
-# Starship Shell Prompt
-if [[ -e $HOME/.cargo/bin/starship ]]; then
-  eval "$(starship init zsh)"
+# oh-my-posh
+if [[ -e /usr/bin/oh-my-posh ]]; then
+  eval "$(oh-my-posh init zsh)"
 fi
+
 
 # chia-start-all-if-needed
 
