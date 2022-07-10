@@ -14,7 +14,9 @@
       glob: true
       path: bash/.bash*
     ~/.conkyrc: conky/conkyrc
-    ~/.local/share/applications/conky.desktop: conky/conky.desktop
+    ~/.local/share/applications/conky.desktop: 
+    create: true
+      path: conky/conky.desktop
     ~/.fonts:
       glob: true
       create: true
@@ -37,6 +39,7 @@
 - create:
     - ~/downloads
     - ~/.vim/undo-history
+
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
