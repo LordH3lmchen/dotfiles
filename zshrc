@@ -187,6 +187,8 @@ fi
 # oh-my-posh
 if [[ -e /usr/bin/oh-my-posh ]]; then
   eval "$(oh-my-posh init zsh)"
+elif [[ -e /usr/local/bin/oh-my-posh ]]; then
+  eval "$(oh-my-posh init zsh)"
 fi
 
 
