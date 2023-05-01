@@ -15,7 +15,7 @@
       path: bash/.bash*
     ~/.conkyrc: conky/conkyrc
     ~/.local/share/applications/conky.desktop: 
-    create: true
+      create: true
       path: conky/conky.desktop
     ~/.fonts:
       glob: true

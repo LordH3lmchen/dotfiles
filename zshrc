@@ -91,7 +91,7 @@ plugins=(
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-alias vim="nvim"
+#alias vim="nvim"
 alias pping="prettyping --nolegend"
 alias top="htop"
 #alias diff="diff-so-fancy"
@@ -185,11 +185,11 @@ if [[ -d $HOME/.local/opt/flutter/bin ]]; then
 fi
 
 # oh-my-posh
-if [[ -e /usr/bin/oh-my-posh ]]; then
-  eval "$(oh-my-posh init zsh)"
-elif [[ -e /usr/local/bin/oh-my-posh ]]; then
-  eval "$(oh-my-posh init zsh)"
-fi
+#if [[ -e /usr/bin/oh-my-posh ]]; then
+  #eval "$(oh-my-posh init zsh)"
+#elif [[ -e /usr/local/bin/oh-my-posh ]]; then
+  #eval "$(oh-my-posh init zsh)"
+#fi
 
 
 # chia-start-all-if-needed

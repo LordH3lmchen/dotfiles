@@ -1,7 +1,7 @@
 [user]
 	name = Florian Trabauer
 	email = florian@trabauer.com
-	signingkey = 360834AD7D0DFD348F6A5500989C6B8E85FB9CA5
+    signingkey = 360834AD7D0DFD348F6A5500989C6B8E85FB9CA5
 
 [commit]
 	gpgsign = true
