@@ -5,7 +5,6 @@
 - clean: ['~']
 
 - link:
-    ~/.tmux.conf: tmux.conf
     ~/.vim: vim
     ~/.gitconfig: gitconfig
     ~/.zsh: zsh
@@ -33,9 +32,6 @@
     ~/.profile: profile
 
 
-
-
-
 - create:
     - ~/downloads
     - ~/.vim/undo-history
@@ -43,3 +39,8 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [chsh -s $(which zsh), Setting zsh as default shell]
+  - [git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm, install tmux plugin manager]
+  - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", install oh-my-zsh]
+
+
