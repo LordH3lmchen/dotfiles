@@ -30,6 +30,7 @@
     ~/.i3: i3
     ~/.xprofile: xprofile
     ~/.profile: profile
+    ~/.oh-my-zsh: oh-my-zsh
 
 
 - create:
