@@ -30,7 +30,6 @@
     ~/.i3: i3
     ~/.xprofile: xprofile
     ~/.profile: profile
-    ~/.oh-my-zsh: oh-my-zsh
 
 
 - create:
@@ -41,5 +40,7 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm, install tmux plugin manager]
+  - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended]
+
 
 
