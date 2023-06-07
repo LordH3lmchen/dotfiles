@@ -8,7 +8,10 @@
     ~/.vim: vim
     ~/.gitconfig: gitconfig
     ~/.zsh: zsh
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+      relink: true
+      path: zshrc
+      force: true
     ~/:
       glob: true
       path: bash/.bash*
