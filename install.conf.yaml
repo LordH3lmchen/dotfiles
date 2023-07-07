@@ -8,7 +8,10 @@
     ~/.vim: vim
     ~/.gitconfig: gitconfig
     ~/.zsh: zsh
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+      relink: true
+      path: zshrc
+      force: true
     ~/:
       glob: true
       path: bash/.bash*
@@ -30,7 +33,6 @@
     ~/.i3: i3
     ~/.xprofile: xprofile
     ~/.profile: profile
-    ~/.oh-my-zsh: oh-my-zsh
 
 
 - create:
@@ -40,8 +42,8 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [chsh -s $(which zsh), Setting zsh as default shell]
   - [git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm, install tmux plugin manager]
-  - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", install oh-my-zsh]
+  - [git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh]
+
 
 

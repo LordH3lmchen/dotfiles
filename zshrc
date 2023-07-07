@@ -169,6 +169,11 @@ if [[ -e $HOME/.xprofile ]]; then
   source $HOME/.xprofile
 fi
 
+if [[ -e /usr/bin/batcat ]]; then
+    alias bat='batcat'
+fi
+
+
 if [[ -d $HOME/Android/Sdk ]]; then
   export ANDROID_HOME=$HOME/Android/Sdk
   export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin
