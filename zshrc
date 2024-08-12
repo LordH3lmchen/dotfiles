@@ -167,6 +167,10 @@ if [[ -e $HOME/.xprofile ]]; then
   source $HOME/.xprofile
 fi
 
+if [[ -e $HOME/.profile ]]; then
+  source $HOME/.profile
+fi
+
 if [[ -e /usr/bin/batcat ]]; then
     alias bat='batcat'
 fi

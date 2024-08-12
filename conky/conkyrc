@@ -119,12 +119,12 @@ ${texeci 1800 zpool list}
 ${texeci 1800 zpool status -x}
 
 
-${color #ffcb48}vhost$color
+${color #ffcb48}mini-server$color
 ${color #98c2c7}zpool list$color
-${texeci 1800 ssh root@vhost zpool list}
+${texeci 1800 ssh root@192.168.1.253 zpool list}
 
 ${color #98c2c7}zpool status$color
-${texeci 1800 ssh root@vhost zpool status -x}
+${texeci 1800 ssh root@192.168.1.253 zpool status -x}
 
 
 ${color #ffcb48}router$color
