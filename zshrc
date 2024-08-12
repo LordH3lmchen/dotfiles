@@ -1,5 +1,5 @@
 #set -x
-
+#setopt SOURCE_TRACE
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -93,9 +93,9 @@ plugins=(
 #
 #alias vim="nvim"
 alias pping="prettyping --nolegend"
-alias top="htop"
+#alias top="htop"
 #alias diff="diff-so-fancy"
-alias du="ncdu --color dark -x --exclude .git --exclude node_modules" 
+alias ncdu="ncdu --color dark -x --exclude .git --exclude node_modules" 
 alias help="tldr"
 
 alias ta='tmux attach -t'
@@ -104,8 +104,6 @@ alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
-alias l='ls -l'
-alias ll='ls -la'
 alias ipython='python -m IPython'
 
 #TODO check the operating system to decide which upgrade alias to use
@@ -195,7 +193,10 @@ fi
 #elif [[ -e /usr/local/bin/oh-my-posh ]]; then
   #eval "$(oh-my-posh init zsh)"
 #fi
-
+#
+alias ls='ls --hyperlink=auto --color'
+alias l='ls -l'
+alias ll='ls -la'
 
 # chia-start-all-if-needed
 
