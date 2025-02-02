@@ -253,9 +253,13 @@ fi
   #eval "$(oh-my-posh init zsh)"
 #fi
 #
-alias ls='ls --hyperlink=auto --color'
-alias l='ls -l'
-alias ll='ls -la'
+alias ls='eza --icons=auto --hyperlink'
+#alias ls='ls --hyperlink=auto --color'
+# alias l='ls -l'
+alias l='eza --icons=auto -l'
+# alias ll='ls -la'
+alias ll='eza --icons=auto -l -a'
+
 
 # chia-start-all-if-needed
 
