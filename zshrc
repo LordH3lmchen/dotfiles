@@ -253,12 +253,18 @@ fi
   #eval "$(oh-my-posh init zsh)"
 #fi
 #
-alias ls='eza --icons=auto --hyperlink'
-#alias ls='ls --hyperlink=auto --color'
-# alias l='ls -l'
-alias l='eza --icons=auto -l'
-# alias ll='ls -la'
-alias ll='eza --icons=auto -l -a'
+
+
+command -v eza > /dev/null
+if [[ $? -eq 0 ]]; then
+  alias ls='eza --icons=auto --hyperlink'
+  alias l='eza --icons=auto --hyperlink -l'
+  alias ll='eza --icons=auto --hyperlink -l -a'
+else
+  alias ls='ls --hyperlink=auto --color'
+  alias l='ls -l'
+  alias ll='ls -la'
+fi
 
 
 # chia-start-all-if-needed
