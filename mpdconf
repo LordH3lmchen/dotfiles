@@ -11,7 +11,7 @@
 # file:// protocol) or streaming files over an accepted protocol.
 #
 #music_directory		"$XDG_MUSIC_DIR"
-music_directory		"~/Music"
+#music_directory		"~/music"
 #
 # This setting sets the MPD internal playlist directory. The purpose of this
 # directory is storage for playlists created by MPD. The server will use
@@ -19,7 +19,7 @@ music_directory		"~/Music"
 # format. This setting defaults to playlist saving being disabled.
 #
 #playlist_directory		"$XDG_CONFIG_HOME/mpd/playlists"
-playlist_directory		"~/.mpd/playlists"
+#playlist_directory		"~/.mpd/playlists"
 #
 # This setting sets the location of the MPD database. This file is used to
 # load the database at server start up and store the database while the
@@ -28,7 +28,7 @@ playlist_directory		"~/.mpd/playlists"
 # files over an accepted protocol.
 #
 #db_file			"$XDG_CACHE_HOME/mpd/database"
-db_file			"~/.mpd/database"
+#db_file			"~/.mpd/database"
 
 # These settings are the locations for the daemon log files for the daemon.
 #
@@ -56,13 +56,13 @@ db_file			"~/.mpd/database"
 # state will be reset on server start up.
 #
 #state_file			"$XDG_RUNTIME_DIR/mpd/state"
-state_file			"~/.mpd/state"
+#state_file			"~/.mpd/state"
 #
 # The location of the sticker database.  This is a database which
 # manages dynamic information attached to songs.
 #
 #sticker_file			"$XDG_CACHE_HOME/sticker.sql"
-sticker_file			"~/.mpd/sticker.sql"
+#sticker_file			"~/.mpd/sticker.sql"
 #
 ###############################################################################
 

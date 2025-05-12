@@ -8,6 +8,6 @@ export SDL_VIDEODRIVER=wayland
 # fi
 
 # Launch Hyprland
-if uwsm check may-start; then
-    exec uwsm start hyprland.desktop
-fi
+#if uwsm check may-start; then
+    #exec uwsm start hyprland.desktop
+#fi

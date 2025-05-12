@@ -33,6 +33,10 @@
     ~/.i3: i3
     ~/.xprofile: xprofile
     ~/.profile: profile
+    ~/.mpdconf:
+      relink: true
+      path: mpdconf
+      force: true
 
 
 - create:
