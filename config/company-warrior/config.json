@@ -1,0 +1,12 @@
+{
+	"roadwarrior": {
+		"nmcli_connection_name" : "lordHelmchen",
+		"printer" : [ "default_printer", "drv:///hp/hpcups.drv/hp-officejet_250_mobile_series.ppd", "iso_a4_210x297mm", "hp:/net/OfficeJet_250_Mobile_Series?ip=xxx.xxx.xxx.xxx" ],
+		"printer_ip_last_octet_android_hotspot" : 40
+	},
+	"officewarrior": {
+		"nmcli_connection_name" : "trabauer",
+		"printer" : [ "default_printer", "drv:///hp/hpcups.drv/hp-officejet_250_mobile_series.ppd", "iso_a4_210x297mm", "hp:/net/OfficeJet_250_Mobile_Series?ip=xxx.xxx.xxx.xxx" ]
+	}
+}
+
