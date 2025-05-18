@@ -271,6 +271,8 @@ else
   alias ll='ls -la'
 fi
 
+alias icat='kitten icat'
+
 bindkey -v
 export KEYTIMEOUT=1
 

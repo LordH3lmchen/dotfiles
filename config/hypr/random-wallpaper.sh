@@ -50,6 +50,9 @@ fi
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" | shuf -n 1)
 
 # Apply the selected wallpaper
+wal --cols16 -i $WALLPAPER
 hyprctl hyprpaper reload "$FOCUSED_MONITOR","$WALLPAPER"
+pkill waybar
+waybar &
 
 

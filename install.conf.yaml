@@ -49,6 +49,7 @@
   - [git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm, install tmux plugin manager]
   - [git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh]
   - [ln -s ~/.config/hypr/machine.$HOST.conf ~/.config/hypr/machine.conf]
+  - [ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/pywal-colors-waybar.css]
 
 
 
