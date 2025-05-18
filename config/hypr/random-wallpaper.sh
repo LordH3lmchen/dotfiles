@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 set -x
 
-
 # 
 WALLPAPER_W_DIR="$HOME/Pictures/Wallpapers/wide" # 16:9
 WALLPAPER_UW_DIR="$HOME/Pictures/Wallpapers/ultra-wide" # 21:9 
@@ -12,9 +11,13 @@ WALLPAPER_VERTICAL_DIR="$HOME/Pictures/Wallpapers/vertical" # vertical
 CURRENT_WALL=$(hyprctl hyprpaper listloaded)
 # Get the name of the focused monitor with hyprctl
 FOCUSED_MONITOR=$(hyprctl monitors -j | jq -r '.[] | select(.focused) | .name')
-FOCUSED_MONITOR_TRANSFORM=$(hyprctl monitors -j | jq -r '.[] | select(.focused) | .transform')
+if [[ -n $1 ]]; then
+    FOCUSED_MONITOR=$1
+fi
+MONITOR_TRANSFORM=$(hyprctl monitors -j | jq -r ".[] | select(.name == \"$FOCUSED_MONITOR\" ) | .transform")
+# MONITOR_TRANSFORM=$(hyprctl monitors -j | jq -r '.[] | select(.focused) | .transform')
 
-if [[ $FOCUSED_MONITOR_TRANSFORM -eq 0 || $FOCUSED_MONITOR_TRANSFORM -eq 2 ]]; then #Dislpay normal or up side down 
+if [[ $MONITOR_TRANSFORM -eq 0 || $MONITOR_TRANSFORM -eq 2 ]]; then #Dislpay normal or up side down 
     echo "Monitor Horizontal"
     typeset -F FM_WIDTH
     typeset -F FM_HEIGHT
@@ -39,7 +42,7 @@ if [[ $FOCUSED_MONITOR_TRANSFORM -eq 0 || $FOCUSED_MONITOR_TRANSFORM -eq 2 ]]; t
         echo "Monitor 32:9"
         WALLPAPER_DIR=$WALLPAPER_DUAL_DIR
     fi
-elif [[  $FOCUSED_MONITOR_TRANSFORM -eq 1 || $FOCUSED_MONITOR_TRANSFORM -eq 3 ]]; then
+elif [[  $MONITOR_TRANSFORM -eq 1 || $MONITOR_TRANSFORM -eq 3 ]]; then
     echo "Monitor Vertical"
     WALLPAPER_DIR=$WALLPAPER_VERTICAL_DIR
 fi
@@ -50,12 +53,3 @@ WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" 
 hyprctl hyprpaper reload "$FOCUSED_MONITOR","$WALLPAPER"
 
 
-# WALLPAPER_DIR="$HOME/Pictures/Wallpapers/"
-# CURRENT_WALL=$(hyprctl hyprpaper listloaded)
-# 
-# # Get a random wallpaper that is not the current one
-# WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" | shuf -n 1)
-# 
-# # Apply the selected wallpaper
-# hyprctl hyprpaper reload ,"$WALLPAPER"
-# 
