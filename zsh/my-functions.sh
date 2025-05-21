@@ -74,4 +74,7 @@ function lblk() {
   lsblk -o NAME,SIZE,TYPE,FSTYPE,PTTYPE,PARTLABEL,LABEL,MODEL,MOUNTPOINT
 }
 
+function random-wallpaper() {
+    $HOME/.config/hypr/random-wallpaper.sh
+}
 
