@@ -1,5 +1,0 @@
-{
-  "coc.preferences.formatOnSaveFiletypes": ["py", "yaml", "json"],
-  "python.linting.flake8Enabled": true,
-  "python.formatting.provider": "black"
-}
