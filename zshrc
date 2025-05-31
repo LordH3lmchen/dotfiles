@@ -235,6 +235,10 @@ if [[ -e /usr/bin/batcat ]]; then
     alias bat='batcat'
 fi
 
+if [[ -e /usr/bin/neomutt ]];  then
+	alias  mutt='neomutt -F ~/.mutt/muttrc'
+	alias mutt-office='neomutt -F ~/.mutt/muttrc-office'
+fi
 
 if [[ -d $HOME/Android/Sdk ]]; then
   export ANDROID_HOME=$HOME/Android/Sdk

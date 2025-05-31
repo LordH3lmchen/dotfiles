@@ -66,9 +66,9 @@ function install-oh-my-zsh() {
 }
 
 
-function mutt-office() {
-  mutt -F "~/.mutt/muttrc-office"
-}
+# function mutt-office() {
+#   mutt -F "~/.mutt/muttrc-office"
+# }
 
 function lblk() {
   lsblk -o NAME,SIZE,TYPE,FSTYPE,PTTYPE,PARTLABEL,LABEL,MODEL,MOUNTPOINT
