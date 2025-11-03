@@ -251,6 +251,11 @@ if [[ -e /usr/bin/google-chrome-stable ]]; then
   export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 fi
 
+# load autocompletions for qmk firmware
+if [[ -e ~/qmk_firmware/util/qmk_tab_complete.sh ]]; then
+	source ~/qmk_firmware/util/qmk_tab_complete.sh
+fi
+
 # Path for flutter
 if [[ -d $HOME/.local/opt/flutter/bin ]]; then 
   export PATH=$HOME/.local/opt/flutter/bin:$PATH
