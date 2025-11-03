@@ -1,0 +1,9 @@
+[Container]
+ContainerName=factorio
+Image=docker.io/factoriotools/factorio
+PublishPort=34197:34197/udp
+PublishPort=27015:27015/tcp
+Volume=/home/flo/factorio:/factorio:z
+
+[Service]
+Restart=always

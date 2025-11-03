@@ -1,0 +1,25 @@
+# https://github.com/mbentley/docker-omada-controller?tab=readme-ov-file#quickstart-guide
+# https://major.io/p/podman-quadlet-automatic-updates/
+
+# mkdir -p Volume=omada-data:/opt/tplink/EAPController/data
+# mkdir -p Volume=omada-logs:/opt/tplink/EAPController/logs
+
+# systemctl --user enable --now podman-auto-update.timer
+
+
+[Container]
+ContainerName=omada-controller
+Environment=TZ=Europe/Vienna
+Image=mbentley/omada-controller:latest
+AutoUpdate=registry
+Network=host
+StopTimeout=60
+Ulimit=nofile=4096:8192
+Volume=omada-data:/opt/tplink/EAPController/data
+Volume=omada-logs:/opt/tplink/EAPController/logs
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
