@@ -95,9 +95,10 @@ export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 alias pping="prettyping --nolegend"
 #alias top="htop"
 #alias diff="diff-so-fancy"
+alias n="nvim"
+alias c="bat"
 alias ncdu="ncdu --color dark -x --exclude .git --exclude node_modules" 
 alias help="tldr"
-
 alias ta='tmux attach -t'
 alias tad='tmux attach -d -t'
 alias ts='tmux new-session -s'
@@ -271,9 +272,9 @@ fi
 
 command -v eza > /dev/null
 if [[ $? -eq 0 ]]; then
-  alias ls='eza --icons=auto --hyperlink'
-  alias l='eza --icons=auto --hyperlink -l'
-  alias ll='eza --icons=auto --hyperlink -l -a'
+  alias ls='eza --hyperlink'
+  alias l='eza --hyperlink -l'
+  alias ll='eza --hyperlink -l -a'
 else
   alias ls='ls --hyperlink=auto --color'
   alias l='ls -l'
