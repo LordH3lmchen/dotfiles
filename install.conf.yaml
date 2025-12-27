@@ -2,7 +2,7 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.vim: vim
@@ -16,7 +16,7 @@
       glob: true
       path: bash/.bash*
     ~/.conkyrc: conky/conkyrc
-    ~/.local/share/applications/conky.desktop: 
+    ~/.local/share/applications/conky.desktop:
       create: true
       path: conky/conky.desktop
     ~/.fonts:
@@ -29,7 +29,7 @@
       path: config/*
       relink: true
       force: true
-      exclude: [ config/Code ]
+      exclude: [config/Code]
     ~/.i3: i3
     ~/.xprofile: xprofile
     ~/.profile: profile
@@ -38,18 +38,18 @@
       path: mpdconf
       force: true
 
-
 - create:
     - ~/Downloads
     - ~/.vim/undo-history
 
-
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  - [git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm, install tmux plugin manager]
-  - [git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh]
-  - [ln -s ~/.config/hypr/machine.$HOST.conf ~/.config/hypr/machine.conf]
-  - [ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/pywal-colors-waybar.css]
-
-
-
+    - [git submodule update --init --recursive, Installing submodules]
+    - [
+        git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm,
+        install tmux plugin manager,
+      ]
+    - [git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh]
+    - [ln -s ~/.config/hypr/machine.$HOST.conf ~/.config/hypr/machine.conf]
+    - [
+        ln -s ~/.cache/wal/colors-waybar.css ~/.config/waybar/pywal-colors-waybar.css,
+      ]
