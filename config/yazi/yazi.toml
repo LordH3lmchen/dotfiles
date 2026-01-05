@@ -1,0 +1,7 @@
+# ~/.config/yazi/yazi.toml
+[mgr]
+linemode = "size_and_mtime"
+
+[preview]
+max_height = 1000
+max_width = 600
