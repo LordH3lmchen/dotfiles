@@ -70,12 +70,12 @@ plugins=(
 
 # You may need to manually set your language environment
 # Preferred editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
- else
-   export EDITOR='nvim'
- fi
-
+#  if [[ -n $SSH_CONNECTION ]]; then
+#    export EDITOR='vim'
+#  else
+#    export EDITOR='nvim'
+#  fi
+# 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -106,7 +106,7 @@ alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
 alias ipython='python -m IPython'
-alias add-torrent='transmission-remote -w $(pwd) -a'
+alias add-torrent='transmission-remote -w "$(pwd)" -a'
 
 #TODO check the operating system to decide which upgrade alias to use
 alias upgrade='yay -Syu'
