@@ -68,6 +68,8 @@ plugins=(
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
+export EDITOR='nvim'
+
 # You may need to manually set your language environment
 # Preferred editor for local and remote sessions
 #  if [[ -n $SSH_CONNECTION ]]; then

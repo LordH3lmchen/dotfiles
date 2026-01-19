@@ -8,7 +8,7 @@ WALLPAPER_DUAL_DIR="$HOME/Pictures/Wallpapers/dual" # 32:9
 WALLPAPER_VERTICAL_DIR="$HOME/Pictures/Wallpapers/vertical" # vertical
 
 
-CURRENT_WALL=$(hyprctl hyprpaper listloaded)
+# CURRENT_WALL=$(hyprctl hyprpaper listloaded)
 # Get the name of the focused monitor with hyprctl
 FOCUSED_MONITOR=$(hyprctl monitors -j | jq -r '.[] | select(.focused) | .name')
 if [[ -n $1 ]]; then
@@ -47,11 +47,11 @@ elif [[  $MONITOR_TRANSFORM -eq 1 || $MONITOR_TRANSFORM -eq 3 ]]; then
     WALLPAPER_DIR=$WALLPAPER_VERTICAL_DIR
 fi
 # Get a random wallpaper that is not the current one
-WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" | shuf -n 1)
+WALLPAPER=$(find "$WALLPAPER_DIR" -type f  | shuf -n 1)
 
 # Apply the selected wallpaper
 wal --cols16 lighten -i $WALLPAPER
-hyprctl hyprpaper reload "$FOCUSED_MONITOR","$WALLPAPER"
+hyprctl hyprpaper wallpaper "$FOCUSED_MONITOR","$WALLPAPER"
 pkill waybar
 waybar &
 
