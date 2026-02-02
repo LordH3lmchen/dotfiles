@@ -50,7 +50,7 @@ fi
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f  | shuf -n 1)
 
 # Apply the selected wallpaper
-wal --cols16 lighten -i $WALLPAPER
+# hellwal -m --check-contrast -i $WALLPAPER
 hyprctl hyprpaper wallpaper "$FOCUSED_MONITOR","$WALLPAPER"
 pkill waybar
 waybar &
