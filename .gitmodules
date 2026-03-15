@@ -5,6 +5,3 @@
 [submodule "config/kitty/kitty-themes"]
 	path = config/kitty/kitty-themes
 	url = https://github.com/dexpota/kitty-themes.git
-[submodule "config/nvim"]
-	path = config/nvim
-	url = git@github.com:LordH3lmchen/kickstart.nvim.git
