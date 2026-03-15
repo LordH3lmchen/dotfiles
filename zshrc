@@ -108,7 +108,7 @@ alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
 alias ipython='python -m IPython'
-alias add-torrent='transmission-remote -w "$(pwd)" -a'
+alias add-torrent='transmission-remote -w "$(pwd)" -a "$(wl-paste)"'
 
 #TODO check the operating system to decide which upgrade alias to use
 alias upgrade='yay -Syu'
